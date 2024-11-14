@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Currículo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .profile {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            width: 80%;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .profile-img {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile-img img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4CAF50;
+        }
+
+        .profile-details {
+            flex: 2;
+            padding-left: 30px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #666;
+        }
+
+        p {
+            font-size: 16px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .extra-info {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+        }
+
+        .extra-info p {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Meu Currículo</h1>
+</header>
+
+<div class="container">
+    <div class="profile">
+        <div class="profile-img">
+            <img src="C:\Users\ALUNO\Desktop\jacauma github\avatar2.png" alt="Minha Foto">
+        </div>
+
+        <div class="profile-details">
+            <h1>Fernando Alonso</h1>
+            <h2>Desenvolvedor Web</h2>
+            <p>
+                Sou um desenvolvedor apaixonado por criar soluções web inovadoras. Tenho experiência em HTML, CSS, JavaScript e outras tecnologias de front-end.
+            </p>
+            <button class="button" onclick="toggleExtraInfo()">Mais Informações</button>
+
+            <div class="extra-info" id="extraInfo">
+                <h3>Habilidades</h3>
+                <ul>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>PHP</li>
+                    <li>Banco de Dados: MySQL</li>
+                    <li>GitHub</li>
+                </ul>
+
+                <h3>Experiência</h3>
+                <p>Trabalhei em diversos projetos, incluindo o Ecoquiz, que faz suscesso no mundo como a maior plataforma de concientização ambiental do mundo.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleExtraInfo() {
+        var extraInfo = document.getElementById("extraInfo");
+        if (extraInfo.style.display === "none" || extraInfo.style.display === "") {
+            extraInfo.style.display = "block";
+        } else {
+            extraInfo.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
